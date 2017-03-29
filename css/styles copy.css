@@ -1,0 +1,79 @@
+``*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%; /* this will be 16px on most browsers */
+  line-height: 1.5; /* this is a multiple of the font size (1.5 * 16px = 24px) */
+}
+
+body {
+  margin: 0;
+}
+
+.fa{
+
+  color: #FF0800;
+}
+
+.container{
+  width: 600px;
+  margin: auto;
+  margin-top: 40PX;
+  margin-bottom: 40px;
+  border: 1px solid #cecece;
+  position: relative; /*  you want absolute icons relative to this container  so it stays where you need tt*/
+
+}
+
+div.action-like {
+  position: absolute;
+
+  right: 8px;
+  bottom: 8px;
+}
+
+img {
+  width: 100%;
+  z-index: 0;
+  padding: 10px;
+}
+
+figure {
+  margin: 0;
+  float: left;
+  width: 40%;
+  position: relative; /* needed?*/
+}
+
+
+/* Absolute put in above div so you are effecting the one below
+
+Be careful about not leaving out any styles?*/
+
+div.action-watch-later {
+  position: absolute;
+  right: -5px;
+  top: 15px;
+
+ }
+
+article.film {
+
+    overflow: hidden;  /* Put float clean in parent  */
+
+}
+
+.film-details {
+  width: 54%;
+  float: right;
+  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+
+}
